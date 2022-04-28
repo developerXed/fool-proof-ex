@@ -1,0 +1,27 @@
+<div class="container">
+  <span class="container--search">Search</span>
+  <input [formControl]="search_word" type="text">
+  <div class="container-buttons">
+  </div>
+</div>
+
+<div class="container-files">
+  <mat-list>
+    <div mat-subheader>Files</div>
+    <mat-list-item *ngFor="let file of allFiles">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line><span class="capitalize-text ">Creation Date: </span> {{file.creationDateTime | date}} </div>
+      <div mat-line><span class="capitalize-text ">Created and Updated User:</span> {{file.modifiedByName}} </div>
+      <div mat-line><span class="capitalize-text ">File Type: </span> {{file.modifiedByType}} </div>
+      <div mat-line><span class="capitalize-text ">ModifiedBy: </span> {{file.modifiedBy }} </div>
+      <div mat-line><span class="capitalize-text ">Popularity: </span> {{file.popularity }} </div>
+      <div mat-line><span class="capitalize-text ">Scheduled: </span> {{file.scheduled }} </div>
+      <div mat-line><span class="capitalize-text ">Status: </span> {{file.status }} </div>
+      <div mat-line><span class="capitalize-text ">Title: </span> {{file.title }} </div>
+      <div mat-line><span class="capitalize-text ">Type: </span> {{file.type }} </div>
+      <div mat-line><span class="capitalize-text ">Iri: </span> {{file.uri }} </div>
+      <div mat-line><span class="capitalize-text ">ersion: </span>V {{file.version }} </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>

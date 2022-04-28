@@ -1,0 +1,13 @@
+.container{
+  display:block;
+  padding:20px;
+  text-align: center;
+}
+
+.container-buttons {
+  padding:20px
+}
+
+.container--search{
+  padding:20px;
+}
